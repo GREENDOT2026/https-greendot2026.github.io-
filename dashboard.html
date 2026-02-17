@@ -9,7 +9,10 @@ body{
   color:white;
   padding:40px;
 }
-.card{
+.card{<div class="card">
+  <h2>Account Balance</h2>
+  <div class="balance">$<span id="balance">0</span></div>
+</div>
   background:#1e2a38;
   padding:30px;
   border-radius:15px;
@@ -49,3 +52,17 @@ button{
 
 </body>
 </html>
+<script>
+let realBalance = 2450; // change to any amount
+let currentBalance = 0;
+
+let counter = setInterval(() => {
+  currentBalance += 50;
+  document.getElementById("balance").innerText = currentBalance;
+
+  if (currentBalance >= realBalance) {
+    clearInterval(counter);
+    document.getElementById("balance").innerText = realBalance;
+  }
+}, 20);
+</script>
