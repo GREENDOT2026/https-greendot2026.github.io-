@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Dot Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(-45deg, #0d1117, #0a3d62, #1e272e, #0f3057);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background: rgba(0,0,0,0.7);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2ecc71;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #2ecc71;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #2ecc71;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .services {
+            background: rgba(0,0,0,0.7);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .service-box {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+        }
+
+        footer {
+            background: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Green Dot Bank</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Secure. Trusted. Reliable.</h1>
+    <p>Your trusted partner in modern digital banking.</p>
+    <button class="btn">Open Account</button>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+        <h3>Online Banking</h3>
+        <p>Access your account anytime, anywhere.</p>
+    </div>
+    <div class="service-box">
+        <h3>Secure Transfers</h3>
+        <p>Fast and protected money transfers.</p>
+    </div>
+    <div class="service-box">
+        <h3>Business Accounts</h3>
+        <p>Financial solutions for companies.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Green Dot Bank. All rights reserved.
+</footer>
+
+</body>
+</html>
