@@ -1,3 +1,7 @@
+form.onsubmit = e => {
+  e.preventDefault();
+  window.location = "pin.html";
+};
 // DEMO DEFAULT DATA
 if(!localStorage.balance){
   localStorage.balance = 5000;
