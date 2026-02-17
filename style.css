@@ -1,3 +1,116 @@
+body {
+  margin:0;
+  font-family:Arial;
+  color:white;
+}
+
+.neon-bg {
+  background:#050510;
+  background-image:
+    radial-gradient(circle at 20% 20%, #1a1aff22, transparent),
+    radial-gradient(circle at 80% 80%, #ff00ff22, transparent);
+}
+
+.center {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container { max-width:520px; margin:auto; }
+
+.card {
+  padding:20px;
+  border-radius:14px;
+  margin:15px;
+}
+
+.glass {
+  background:rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.small { font-size:12px; opacity:.7; }
+
+input, button {
+  width:100%;
+  padding:14px;
+  margin-top:10px;
+  border-radius:10px;
+  border:none;
+}
+
+button {
+  background:#00f5ff;
+  font-weight:bold;
+}
+
+.topbar {
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+}
+
+/* KEYPAD */
+
+.keypad {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+/* CARD FLIP */
+
+.card-wrap { perspective:1000px; }
+
+.bank-card {
+  height:200px;
+  border-radius:18px;
+  padding:20px;
+  transition:transform .6s;
+  transform-style:preserve-3d;
+  position:relative;
+}
+
+.bank-card.neon {
+  background:linear-gradient(135deg,#00f5ff,#7c3aed);
+  box-shadow:0 0 30px #00f5ff55;
+}
+
+.bank-card.flipped {
+  transform:rotateY(180deg);
+}
+
+.front, .back {
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+}
+
+.back {
+  transform:rotateY(180deg);
+}
+
+.chip {
+  width:50px;
+  height:35px;
+  background:gold;
+  border-radius:6px;
+}
+
+.stripe {
+  height:40px;
+  background:black;
+  margin-top:20px;
+}
+
+.row {
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+}
 .bank-card {
   background: linear-gradient(135deg,#1d4ed8,#9333ea);
   border-radius:16px;
