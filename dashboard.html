@@ -1,3 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Dashboard</title>
+</head>
+
+<body class="neon-bg">
+
+<div class="topbar">
+  <h3>Demo Dashboard</h3>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+<!-- FLIP CARD -->
+<div class="card-wrap" onclick="flipCard()">
+  <div id="bankCard" class="bank-card neon">
+    
+    <div class="front">
+      <div class="chip"></div>
+      <div id="cardNumber"></div>
+      <div class="row">
+        <span id="expiry"></span>
+        <span id="cardStatus"></span>
+      </div>
+    </div>
+
+    <div class="back">
+      <div class="stripe"></div>
+      <div class="cvv">CVV: <span id="cvv"></span></div>
+    </div>
+
+  </div>
+</div>
+
+<button onclick="toggleFreeze()" id="freezeBtn"></button>
+
+<div class="card glass">
+  <h2>Balance</h2>
+  $<span id="balance"></span>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 function loadDashboard(){
   const bal = document.getElementById("balance");
   if(!bal) return;
