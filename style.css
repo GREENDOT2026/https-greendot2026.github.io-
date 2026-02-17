@@ -1,3 +1,35 @@
+.bank-card {
+  background: linear-gradient(135deg,#1d4ed8,#9333ea);
+  border-radius:16px;
+  padding:24px;
+  color:white;
+  margin:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.card-chip {
+  width:50px;
+  height:35px;
+  background:gold;
+  border-radius:6px;
+  margin-bottom:20px;
+}
+
+.card-number {
+  font-size:20px;
+  letter-spacing:3px;
+  margin-bottom:15px;
+}
+
+.card-name {
+  font-size:14px;
+  opacity:.9;
+}
+
+.card-balance {
+  margin-top:10px;
+  font-weight:bold;
+}
 body {
   font-family: Arial;
   margin: 0;
