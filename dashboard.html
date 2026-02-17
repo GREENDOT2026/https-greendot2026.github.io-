@@ -1,3 +1,18 @@
+function loadDashboard(){
+  const bal = document.getElementById("balance");
+  if(!bal) return;
+
+  bal.innerText = Number(localStorage.balance).toLocaleString();
+
+  const cn = document.getElementById("cardNumber");
+  if(cn) cn.innerText = localStorage.cardNumber;
+
+  const list = document.getElementById("txList");
+  list.innerHTML = "";
+  JSON.parse(localStorage.txs).reverse().forEach(t=>{
+    list.innerHTML += `<li>${t}</li>`;
+  });
+}
 <div class="bank-card">
   <div class="card-chip"></div>
   <div class="card-number" id="cardNumber">•••• •••• •••• ••••</div>
