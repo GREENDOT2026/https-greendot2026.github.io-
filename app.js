@@ -51,3 +51,15 @@ function addTransaction(title, amount) {
   });
   localStorage.setItem("transactions", JSON.stringify(tx));
 }
+<button onclick="switchUser()">Switch User</button>
+
+<script>
+function switchUser() {
+  const current = localStorage.getItem("currentUser");
+  localStorage.setItem(
+    "currentUser",
+    current === "michelle" ? "david" : "michelle"
+  );
+  location.reload();
+}
+</script>
