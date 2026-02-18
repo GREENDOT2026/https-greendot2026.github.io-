@@ -1,3 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send Money</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Send Money</h2>
+  <input id="to" placeholder="Recipient">
+  <input id="amount" placeholder="Amount" type="number">
+  <button onclick="sendMoney()">Send</button>
+</div>
+
+<script src="app.js"></script>
+<script>
+function sendMoney() {
+  const amount = parseFloat(document.getElementById("amount").value);
+  let balance = getBalance();
+
+  if (amount > balance) {
+    alert("Insufficient funds");
+    return;
+  }
+
+  balance -= amount;
+  setBalance(balance);
+  addTransaction("Transfer Sent", -amount);
+
+  window.location.href = "dashboard.html";
+}
+</script>
+
+</body>
+</html>
 <h2>Send Money</h2>
 <input placeholder="Recipient">
 <input placeholder="Amount">
