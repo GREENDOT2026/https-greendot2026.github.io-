@@ -1,3 +1,13 @@
+function addTransaction(title, amount, category) {
+  const tx = JSON.parse(localStorage.getItem("transactions"));
+  tx.unshift({
+    title,
+    amount,
+    category,
+    date: new Date().toLocaleDateString()
+  });
+  localStorage.setItem("transactions", JSON.stringify(tx));
+}
 const user = getUser();
 document.querySelector("h3").innerText =
   `You're welcome, ${user.name}`;
