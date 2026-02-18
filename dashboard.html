@@ -1,3 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+if (localStorage.getItem("auth") !== "true") {
+  window.location.href = "login.html";
+}
+</script>
+
+<h3>You're welcome, Michelle Ann</h3>
+
+<div class="balance-card">
+  <p>Available Balance</p>
+  <h1>$175,000.00</h1>
+  <small>Reloadable Deposit Account</small>
+</div>
+
+<div class="card-visa">
+  <p>Michelle Ann</p>
+  <span>VISA • Active</span>
+</div>
+
+<div class="actions">
+  <a href="send.html">Send</a>
+  <a href="add.html">Add Money</a>
+  <a href="history.html">History</a>
+</div>
+
+<nav>
+  <a href="dashboard.html">Home</a>
+  <a href="send.html">Send</a>
+  <a href="history.html">History</a>
+  <a href="settings.html">Settings</a>
+</nav>
+
+</body>
+</html>
 <script>
   if (localStorage.getItem("loggedIn") !== "true") {
     window.location.href = "index.html";
