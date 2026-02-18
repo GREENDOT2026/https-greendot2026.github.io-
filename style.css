@@ -1,3 +1,10 @@
+.category {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #e7f4ef;
+  color: #0aa36c;
+}
 .loading::after {
   content: "";
   position: fixed;
