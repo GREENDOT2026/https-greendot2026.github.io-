@@ -1,3 +1,6 @@
+const user = getUser();
+document.querySelector("h3").innerText =
+  `You're welcome, ${user.name}`;
 const users = {
   michelle: {
     name: "Michelle Ann",
