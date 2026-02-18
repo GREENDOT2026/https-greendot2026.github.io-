@@ -1,3 +1,20 @@
+.receipt p {
+  text-align: left;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.receipt strong {
+  color: #555;
+}
+
+.tx {
+  cursor: pointer;
+}
+
+.tx:hover {
+  background: #f5fbf8;
+}
 .category {
   font-size: 12px;
   padding: 4px 10px;
